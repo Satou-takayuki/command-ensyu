@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Main {
+public class Bmi {
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
 
@@ -14,14 +14,32 @@ public class Main {
         double bmi = weight / (height * height);
 
         if(bmi < 18.5){
-            System.out.println(bmi);
-            System.out.println("適正より低いです。");
+            System.out.printf("%.2f", bmi);
+            System.out.println("、適正より低いです。");
         } else if(bmi >= 18.5 && bmi < 25){
-            System.out.println(bmi);
-            System.out.println("適正体型です。");
+            System.out.printf("%.2f", bmi);
+            System.out.println("、適正体型です。");
         } else if(bmi >= 25 && bmi < 30){
-            System.out.println(bmi);
-            System.out.println("適正より高いです。");
+            System.out.printf("%.2f", bmi);
+            System.out.println("、適正より高いです。");
+        }
+
+        System.out.println("もう一人の身長を入力してください。");
+        double height2 = sc.nextDouble();
+        System.out.println("もう一人の体重を入力してください。");
+        double weight2 = sc.nextDouble();
+
+        double bmi2 = weight2 / (height2 * height2);
+
+        if(bmi < 18.5){
+            System.out.printf("%.2f", bmi2);
+            System.out.println("、適正より低いです。");
+        } else if(bmi >= 18.5 && bmi < 25){
+            System.out.printf("%.2f", bmi2);
+            System.out.println("、適正体型です。");
+        } else if(bmi >= 25 && bmi < 30){
+            System.out.printf("%.2f", bmi2);
+            System.out.println("、適正より高いです。");
         }
     }
 }
