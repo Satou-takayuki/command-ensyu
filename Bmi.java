@@ -6,40 +6,24 @@ public class Bmi {
 
         System.out.println("BMIを計算して、肥満度を表示します。");
 
-        System.out.println("身長を入力してください。");
-        double height = sc.nextDouble();
-        System.out.println("体重を入力してください。");
-        double weight = sc.nextDouble();
+        System.out.println("1人目の身長を入力してください。");
+        double height1 = Double.parseDouble(sc.nextLine());
+        System.out.println("1人目の体重を入力してください。");
+        double weight1 = Double.parseDouble(sc.nextLine());
 
-        double bmi = weight / (height * height);
+        double bmi1 = weight1 / (height1 * height1);
 
-        if(bmi < 18.5){
-            System.out.printf("%.2f", bmi);
-            System.out.println("、適正より低いです。");
-        } else if(bmi >= 18.5 && bmi < 25){
-            System.out.printf("%.2f", bmi);
-            System.out.println("、適正体型です。");
-        } else if(bmi >= 25 && bmi < 30){
-            System.out.printf("%.2f", bmi);
-            System.out.println("、適正より高いです。");
-        }
+        System.out.println("1人目の");
+        System.out.printf("BMIは %.2f です。", bmi2);
 
-        System.out.println("もう一人の身長を入力してください。");
-        double height2 = sc.nextDouble();
-        System.out.println("もう一人の体重を入力してください。");
-        double weight2 = sc.nextDouble();
+        System.out.println("2人目の身長を入力してください。");
+        double.height2 = Double.parseDouble(sc.nextLine());
+        System.out.println("2人目の体重を入力してください。");
+        double.weight2 = Double.parseDouble(sc.nextLine());
 
         double bmi2 = weight2 / (height2 * height2);
 
-        if(bmi < 18.5){
-            System.out.printf("%.2f", bmi2);
-            System.out.println("、適正より低いです。");
-        } else if(bmi >= 18.5 && bmi < 25){
-            System.out.printf("%.2f", bmi2);
-            System.out.println("、適正体型です。");
-        } else if(bmi >= 25 && bmi < 30){
-            System.out.printf("%.2f", bmi2);
-            System.out.println("、適正より高いです。");
-        }
+        System.out.println("2人目の");
+        System.out.printf("BMIは %.2f です。", bmi2);
     }
 }
