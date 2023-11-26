@@ -17,9 +17,9 @@ public class Bmi {
         System.out.printf("BMIは %.2f です。", bmi2);
 
         System.out.println("2人目の身長を入力してください。");
-        double.height2 = Double.parseDouble(sc.nextLine());
+        double height2 = Double.parseDouble(sc.nextLine());
         System.out.println("2人目の体重を入力してください。");
-        double.weight2 = Double.parseDouble(sc.nextLine());
+        double weight2 = Double.parseDouble(sc.nextLine());
 
         double bmi2 = weight2 / (height2 * height2);
 
